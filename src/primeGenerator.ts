@@ -1,11 +1,20 @@
 /**
- * פונקציה עזר: בודקת אם מספר הוא ראשוני
+ * בודקת אם מספר הוא ראשוני
  * מספר ראשוני הוא מספר טבעי גדול מ-1 שמתחלק רק ב-1 ובעצמו
  *
  * @param {number} num - המספר לבדיקה
  * @returns {boolean} - true אם המספר ראשוני, false אם לא
+ *
+ * @example
+ * ```javascript
+ * isPrime(7);   // true - 7 הוא מספר ראשוני
+ * isPrime(10);  // false - 10 מתחלק ב-2 וב-5
+ * isPrime(2);   // true - 2 הוא המספר הראשוני הזוגי היחיד
+ * isPrime(1);   // false - 1 אינו ראשוני
+ * isPrime(17);  // true - 17 הוא מספר ראשוני
+ * ```
  */
-function isPrime(num: number): boolean {
+export function isPrime(num: number): boolean {
   // מספרים קטנים מ-2 אינם ראשוניים
   if (num < 2) return false;
 
